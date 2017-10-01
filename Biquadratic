@@ -1,0 +1,37 @@
+import math
+print("Я решу любое уравнение такого типа:")
+print("ax^4+bx^2+c=0")
+print("Но для этого вы должны сообщить мне числа a, b, c")
+a=float(input("a ="))
+b=float(input("b ="))
+c=float(input("c ="))
+d=(b**2)-(4*a*c)
+if d<0:
+	print("Это уравнение не имеет корней!")
+if d==0:
+	y=(-b)/(2*a)
+	if y>0:
+		x=(math.sqrt(y))
+	if y==0:
+		x=0
+	if y<0:
+		x=-(math.sqrt(y))
+	print("Уравнение имеет 1 корень: ", x)
+if d>0:
+	y1=(-b+(math.sqrt(d)))/(2*a)
+	y2=(-b-(math.sqrt(d)))/(2*a)
+	if y1>0:
+		x1=(math.sqrt(y1))
+	if y1==0:
+		x1=0
+	if y1<0:
+		x1=-(math.sqrt(y1))
+	if y2>0:
+		x2=(math.sqrt(y2))
+	if y2==0:
+		x2=0
+	if y2<0:
+		x2=-(math.sqrt(y2))
+	print("Уравнение имеет два корня: ", x1," и ", x2)
+print("Оказалось ли решением верным?")
+print("Еще бы!")
