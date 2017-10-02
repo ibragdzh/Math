@@ -15,7 +15,7 @@ if d==0:
 	if y==0:
 		x=0
 	if y<0:
-		x=-(math.sqrt(y))
+		x=(-(math.sqrt(y)))
 	print("Уравнение имеет 1 корень: ", x)
 if d>0:
 	y1=(-b+(math.sqrt(d)))/(2*a)
@@ -25,13 +25,13 @@ if d>0:
 	if y1==0:
 		x1=0
 	if y1<0:
-		x1=-(math.sqrt(y1))
+		x1=(-(math.sqrt(y1)))
 	if y2>0:
 		x2=(math.sqrt(y2))
 	if y2==0:
 		x2=0
 	if y2<0:
-		x2=-(math.sqrt(y2))
+		x2=(-(math.sqrt(y2)))
 	print("Уравнение имеет два корня: ", x1," и ", x2)
 print("Оказалось ли решением верным?")
 print("Еще бы!")
