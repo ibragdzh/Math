@@ -1,0 +1,32 @@
+import random
+mistakes=0
+score=0
+a1=random.randint(0,10)
+a2=random.randint(0,10)
+first = int(input(str(a1) + " * " + str(a2) + " = "))
+if first == a1*a2: 
+    score+=1 
+    print("Верно!")
+else:
+    mistakes+=1 
+    print("Неверно!")
+a1=random.randint(0,10)
+a2=random.randint(0,10)
+second = int(input(str(a1) + " * " + str(a2) + " = "))
+if second == a1*a2:
+    score+=1 
+    print("Верно!")
+else:
+    mistakes+=1 
+    print("Неверно!")
+a1=random.randint(0,10)
+a2=random.randint(0,10)
+third = int(input(str(a1) + " * " + str(a2) + " = "))
+if third == a1*a2:
+    score+=1 
+    print("Верно!")
+else:
+    mistakes+=1 
+    print("Неверно!")
+print("Верных ответов: ", score)
+print("Неверных ответов: ", mistakes)
